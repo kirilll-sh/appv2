@@ -1,0 +1,554 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ДомКлюч - Недвижимость в Ижевске</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="navbar__top"></div>
+        <div class="container navbar__container">
+            <div class="navbar__brand">
+                <img class="navbar__brand-icon" src="img/logo.png">
+                <div class="navbar__brand-text">
+                    <div class="navbar__brand-name">Дом</div>
+                    <div class="navbar__brand-name">Ключ</div>
+                </div>
+            </div>
+            <ul class="navbar__menu">
+                <li><a href="#catalog">Каталог</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#recommended">Рекомендуем</a></li>
+            </ul>
+            <div class="navbar__actions">
+                <a href="login.html" class="navbar__auth-btn">Войти</a>
+                <a href="register.html" class="navbar__auth-btn navbar__auth-btn--register">Регистрация</a>
+                <a href="#" class="navbar__profile-btn">
+                    <img src="img/ruser.png" alt="">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Героя секция -->
+    <section id="home" class="hero">
+        <div class="hero__background">
+            <div class="container hero__content">
+                <h1>Дом Ключ - где мечты обретают адрес</h1>
+                <p>Пока Вы мечтаете мы работаем за Вас</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Рекомендуем -->
+    <section id="recommended" class="recommended">
+        <div class="container">
+            <h2>Рекомендуем</h2>
+            <div class="carousel">
+                <button class="carousel__btn carousel__btn--prev" onclick="scrollCarousel(-1, this)">❮</button>
+                <div class="carousel__inner">
+                    <div class="recommended__card">
+                        <div class="recommended__image">
+                            <img src="img/ол.png">
+                        </div>
+                        <div class="recommended__info">
+                            <h3>ЖК "Покровский"</h3>
+                            <p class="recommended__desc">Премиум класс жилье в центре Ижевска</p>
+                        </div>
+                    </div>
+                    <div class="recommended__card">
+                        <div class="recommended__image">
+                            <img src="img/ол.png">
+                        </div>
+                        <div class="recommended__info">
+                            <h3>ЖК "Покровский"</h3>
+                            <p class="recommended__desc">Премиум класс жилье в центре Ижевска</p>
+                        </div>
+                    </div>
+                    <div class="recommended__card">
+                        <div class="recommended__image">
+                            <img src="img/ол.png">
+                        </div>
+                        <div class="recommended__info">
+                            <h3>ЖК "Покровский"</h3>
+                            <p class="recommended__desc">Премиум класс жилье в центре Ижевска</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel__btn carousel__btn--next" onclick="scrollCarousel(1, this)">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="advantages">
+        <div class="container">
+            <h2>Почему выбирают нас</h2>
+            <div class="advantages__grid">
+                <img src="img/vs.png" alt="">
+                <div class="texi_info">
+                    <p class="texi_info_1">Запись на просмотр
+                        онлайн</p>
+                    <p>Выбирайте
+                        удобное время в календаре,
+                        без звонков и ожидания
+                        ответа риэлтора</p>
+                    <button>Записаться</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Быстрый поиск -->
+    <section class="quick-search">
+        <div class="container">
+            <h2>Поиск недвижимости</h2>
+            <div class="quick-search__form">
+                <select class="form-control">
+                    <option>Тип объекта</option>
+                    <option>Квартира</option>
+                    <option>Дом</option>
+                    <option>Комната</option>
+                    <option>Коммерческое помещение</option>
+                </select>
+                <select class="form-control">
+                    <option>Район</option>
+                    <option>Центр</option>
+                    <option>Октябрьский</option>
+                    <option>Завьяловский</option>
+                    <option>Первомайский</option>
+                </select>
+                <input type="text" class="form-control" placeholder="Мин. цена">
+                <input type="text" class="form-control" placeholder="Макс. цена">
+                <input type="text" class="form-control" placeholder="Кол-во комнат">
+                <button class="button quick-search__button">Поиск</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Популярные объекты -->
+    <section class="popular-objects">
+        <div class="container">
+            <h2>Популярные объекты</h2>
+            <div class="carousel">
+                <button class="carousel__btn carousel__btn--prev" onclick="scrollCarousel(-1, this)">❮</button>
+                <div class="carousel__inner">
+
+                    <div class="object-card">
+                        <img src="img/ол.png" alt="" class="object-card__image">
+                        <div class="object-card__info">
+                            <h3>Двухкомнатная квартира, ЖК АРТНОВА</h3>
+                            <p class="address">Новаторов 2</p>
+                            <p class="price">6 800 000 ₽</p>
+                            <p class="details">2 комнаты • 65 м²</p>
+                            <button class="button button--small">В избранное</button>
+                        </div>
+                    </div>
+                    <div class="object-card">
+                        <img src="img/ол.png" alt="" class="object-card__image">
+                        <div class="object-card__info">
+                            <h3>Двухкомнатная квартира, ЖК АРТНОВА</h3>
+                            <p class="address">Новаторов 2</p>
+                            <p class="price">6 800 000 ₽</p>
+                            <p class="details">2 комнаты • 65 м²</p>
+                            <button class="button button--small">В избранное</button>
+                        </div>
+                    </div>
+                    <div class="object-card">
+                        <img src="img/ол.png" alt="" class="object-card__image">
+                        <div class="object-card__info">
+                            <h3>Двухкомнатная квартира, ЖК АРТНОВА</h3>
+                            <p class="address">Новаторов 2</p>
+                            <p class="price">6 800 000 ₽</p>
+                            <p class="details">2 комнаты • 65 м²</p>
+                            <button class="button button--small">В избранное</button>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel__btn carousel__btn--next" onclick="scrollCarousel(1, this)">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Каталог объектов -->
+    <section id="catalog" class="catalog">
+        <div class="container">
+            <h2>Все объекты</h2>
+
+            <div class="catalog__layout">
+                <!-- Фильтры -->
+                <aside class="catalog__filters">
+                    <h3>Фильтры</h3>
+
+                    <div class="catalog__filter-group">
+                        <label>Тип объекта</label>
+                        <label class="catalog__checkbox">
+                            <input type="checkbox"> Квартира
+                        </label>
+                        <label class="catalog__checkbox">
+                            <input type="checkbox"> Дом
+                        </label>
+                        <label class="catalog__checkbox">
+                            <input type="checkbox"> Комната
+                        </label>
+                        <label class="catalog__checkbox">
+                            <input type="checkbox"> Коммерческое
+                        </label>
+                    </div>
+
+                    <div class="catalog__filter-group">
+                        <label>Район</label>
+                        <label class="catalog__checkbox">
+                            <input type="checkbox"> Центр
+                        </label>
+                        <label class="catalog__checkbox">
+                            <input type="checkbox"> Октябрьский
+                        </label>
+                        <label class="catalog__checkbox">
+                            <input type="checkbox"> Завьяловский
+                        </label>
+                        <label class="catalog__checkbox">
+                            <input type="checkbox"> Первомайский
+                        </label>
+                    </div>
+
+                    <div class="catalog__filter-group">
+                        <label>Цена (₽)</label>
+                        <input type="range" min="100000" max="10000000" class="catalog__slider">
+                        <div class="catalog__price-range">
+                            <span>100 000</span> - <span>10 000 000</span>
+                        </div>
+                    </div>
+
+                    <div class="catalog__filter-group">
+                        <label>Комнаты</label>
+                        <select class="form-control">
+                            <option>Любое</option>
+                            <option>Студия</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4+</option>
+                        </select>
+                    </div>
+
+                    <button class="button button--primary" style="width: 100%; margin-top: 20px;">Применить</button>
+                </aside>
+
+                <!-- Список объектов -->
+                <div class="catalog__list">
+                    <div class="catalog__search">
+                        <input type="text" placeholder="Поиск по адресу...">
+                    </div>
+
+                    <div class="catalog__grid">
+                        <!-- Объект 1 -->
+                        <div class="catalog-card">
+                            <img class="catalog-card__image" src="img/ол.png" alt="">
+                            <div class="catalog-card__info">
+                                <h3>Трёхкомнатная квартира в центре</h3>
+                                <p class="address">ул. Пушкина, 42, Ижевск</p>
+                                <p class="catalog-card__price">2 500 000 ₽</p>
+                                <div class="catalog-card__details">
+                                    <span>3 комнаты</span>
+                                    <span>85 м²</span>
+                                    <span>5 этаж</span>
+                                </div>
+                                <p class="catalog-card__description">Светлая квартира с евроремонтом, все окна на
+                                    солнечную сторону</p>
+                                <div class="catalog-card__actions">
+                                    <button class="button button--primary" onclick="openCard(1)">Подробнее</button>
+                                    <button class="button button--secondary">❤ В избранное</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Объект 1 -->
+                        <div class="catalog-card">
+                            <img class="catalog-card__image" src="img/ол.png" alt="">
+                            <div class="catalog-card__info">
+                                <h3>Трёхкомнатная квартира в центре</h3>
+                                <p class="address">ул. Пушкина, 42, Ижевск</p>
+                                <p class="catalog-card__price">2 500 000 ₽</p>
+                                <div class="catalog-card__details">
+                                    <span>3 комнаты</span>
+                                    <span>85 м²</span>
+                                    <span>5 этаж</span>
+                                </div>
+                                <p class="catalog-card__description">Светлая квартира с евроремонтом, все окна на
+                                    солнечную сторону</p>
+                                <div class="catalog-card__actions">
+                                    <button class="button button--primary" onclick="openCard(1)">Подробнее</button>
+                                    <button class="button button--secondary">❤ В избранное</button>
+                                </div>
+                            </div>
+                        </div><!-- Объект 1 -->
+                        <div class="catalog-card">
+                            <img class="catalog-card__image" src="img/ол.png" alt="">
+                            <div class="catalog-card__info">
+                                <h3>Трёхкомнатная квартира в центре</h3>
+                                <p class="address">ул. Пушкина, 42, Ижевск</p>
+                                <p class="catalog-card__price">2 500 000 ₽</p>
+                                <div class="catalog-card__details">
+                                    <span>3 комнаты</span>
+                                    <span>85 м²</span>
+                                    <span>5 этаж</span>
+                                </div>
+                                <p class="catalog-card__description">Светлая квартира с евроремонтом, все окна на
+                                    солнечную сторону</p>
+                                <div class="catalog-card__actions">
+                                    <button class="button button--primary" onclick="openCard(1)">Подробнее</button>
+                                    <button class="button button--secondary">❤ В избранное</button>
+                                </div>
+                            </div>
+                        </div><!-- Объект 1 -->
+                        <div class="catalog-card">
+                            <img class="catalog-card__image" src="img/ол.png" alt="">
+                            <div class="catalog-card__info">
+                                <h3>Трёхкомнатная квартира в центре</h3>
+                                <p class="address">ул. Пушкина, 42, Ижевск</p>
+                                <p class="catalog-card__price">2 500 000 ₽</p>
+                                <div class="catalog-card__details">
+                                    <span>3 комнаты</span>
+                                    <span>85 м²</span>
+                                    <span>5 этаж</span>
+                                </div>
+                                <p class="catalog-card__description">Светлая квартира с евроремонтом, все окна на
+                                    солнечную сторону</p>
+                                <div class="catalog-card__actions">
+                                    <button class="button button--primary" onclick="openCard(1)">Подробнее</button>
+                                    <button class="button button--secondary">❤ В избранное</button>
+                                </div>
+                            </div>
+                        </div><!-- Объект 1 -->
+                        <div class="catalog-card">
+                            <img class="catalog-card__image" src="img/ол.png" alt="">
+                            <div class="catalog-card__info">
+                                <h3>Трёхкомнатная квартира в центре</h3>
+                                <p class="address">ул. Пушкина, 42, Ижевск</p>
+                                <p class="catalog-card__price">2 500 000 ₽</p>
+                                <div class="catalog-card__details">
+                                    <span>3 комнаты</span>
+                                    <span>85 м²</span>
+                                    <span>5 этаж</span>
+                                </div>
+                                <p class="catalog-card__description">Светлая квартира с евроремонтом, все окна на
+                                    солнечную сторону</p>
+                                <div class="catalog-card__actions">
+                                    <button class="button button--primary" onclick="openCard(1)">Подробнее</button>
+                                    <button class="button button--secondary">❤ В избранное</button>
+                                </div>
+                            </div>
+                        </div><!-- Объект 1 -->
+                        <div class="catalog-card">
+                            <img class="catalog-card__image" src="img/ол.png" alt="">
+                            <div class="catalog-card__info">
+                                <h3>Трёхкомнатная квартира в центре</h3>
+                                <p class="address">ул. Пушкина, 42, Ижевск</p>
+                                <p class="catalog-card__price">2 500 000 ₽</p>
+                                <div class="catalog-card__details">
+                                    <span>3 комнаты</span>
+                                    <span>85 м²</span>
+                                    <span>5 этаж</span>
+                                </div>
+                                <p class="catalog-card__description">Светлая квартира с евроремонтом, все окна на
+                                    солнечную сторону</p>
+                                <div class="catalog-card__actions">
+                                    <button class="button button--primary" onclick="openCard(1)">Подробнее</button>
+                                    <button class="button button--secondary">❤ В избранное</button>
+                                </div>
+                            </div>
+                        </div><!-- Объект 1 -->
+                        <div class="catalog-card">
+                            <img class="catalog-card__image" src="img/ол.png" alt="">
+                            <div class="catalog-card__info">
+                                <h3>Трёхкомнатная квартира в центре</h3>
+                                <p class="address">ул. Пушкина, 42, Ижевск</p>
+                                <p class="catalog-card__price">2 500 000 ₽</p>
+                                <div class="catalog-card__details">
+                                    <span>3 комнаты</span>
+                                    <span>85 м²</span>
+                                    <span>5 этаж</span>
+                                </div>
+                                <p class="catalog-card__description">Светлая квартира с евроремонтом, все окна на
+                                    солнечную сторону</p>
+                                <div class="catalog-card__actions">
+                                    <button class="button button--primary" onclick="openCard(1)">Подробнее</button>
+                                    <button class="button button--secondary">❤ В избранное</button>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Модальное окно карточки объекта -->
+    <div id="cardModal" class="modal">
+        <div class="modal__content">
+            <span class="modal__close" onclick="closeCard()">&times;</span>
+            <div class="modal__detail">
+                <div class="modal__image" style="background: linear-gradient(135deg, #B5E8D8, #98D8C8); height: 300px;">
+                </div>
+                <div class="modal__info">
+                    <h2 id="cardTitle">Трёхкомнатная квартира</h2>
+                    <p id="cardAddress" class="address">ул. Пушкина, 42</p>
+                    <p id="cardPrice" class="catalog-card__price">2 500 000 ₽</p>
+
+                    <h3>Характеристики</h3>
+                    <ul>
+                        <li>Комнаты: <strong id="cardRooms">3</strong></li>
+                        <li>Площадь: <strong id="cardArea">85</strong> м²</li>
+                        <li>Район: <strong id="cardFloor">Центр</strong></li>
+                        <li>Тип: <strong id="cardType">Квартира</strong></li>
+                    </ul>
+
+                    <h3>Описание</h3>
+                    <p id="cardDescription">Светлая квартира с евроремонтом, все окна на солнечную сторону</p>
+
+                    <h3>Калькулятор ипотеки</h3>
+                    <div class="mortgage__calc">
+                        <div class="mortgage__group">
+                            <label>Сумма кредита (₽)</label>
+                            <input type="number" id="mortgageAmount" placeholder="1 500 000" value="1500000">
+                        </div>
+                        <div class="mortgage__group">
+                            <label>Процентная ставка (%)</label>
+                            <input type="number" id="mortgageRate" placeholder="7.5" value="7.5" step="0.1">
+                        </div>
+                        <div class="mortgage__group">
+                            <label>Срок (лет)</label>
+                            <input type="number" id="mortgageTerm" placeholder="20" value="20">
+                        </div>
+                        <button class="button button--primary" onclick="calculateMortgage()">Рассчитать</button>
+                        <div id="mortgageResult"
+                            style="margin-top: 15px; padding: 10px; background: #f0f0f0; border-radius: 5px; display: none;">
+                            <p>Ежемесячный платёж: <strong id="monthlyPayment">0</strong> ₽</p>
+                        </div>
+                    </div>
+
+                    <h3>Оставить заявку</h3>
+                    <form class="request-form" onsubmit="submitRequest(event)">
+                        <input type="text" id="clientName" placeholder="Ваше имя" required>
+                        <input type="tel" id="clientPhone" placeholder="Телефон" required>
+                        <input type="email" id="clientEmail" placeholder="Email" required>
+                        <textarea id="requestMessage" placeholder="Сообщение" rows="3"></textarea>
+                        <input type="datetime-local" id="viewingDate" placeholder="Когда хотите посмотреть">
+                        <button type="submit" class="button button--primary" style="width: 100%;">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+    <!-- О нас -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>О компании ДомКлюч</h2>
+            <div class="about__content">
+                <div class="about__text">
+                    <p>Мы - профессиональное риэлторское агентство, работающее в Ижевске более 0 лет. Наша команда
+                        помогла сотням людей найти свой идеальный дом.</p>
+                    <p>Мы специализируемся на продаже, покупке и аренде жилой и коммерческой недвижимости. Каждый клиент
+                        для нас - долгосрочный партнёр.</p>
+                </div>
+                <div class="about__stats">
+                    <div class="about__stat">
+                        <h3>1+</h3>
+                        <p>Объектов в базе</p>
+                    </div>
+                    <div class="about__stat">
+                        <h3>0+</h3>
+                        <p>Довольных клиентов</p>
+                    </div>
+                    <div class="about__stat">
+                        <h3>1/7</h3>
+                        <p>Техподдержка</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Контакты</h2>
+            <div class="contact__info">
+                <div class="contact__item">
+                    <h3>Режим работы</h3>
+                    <p>Пн-Пт: 9:00 - 9:01<br>Сб: 10:00 - 10:01<br>Вс: Выходной</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Личный кабинет (скрытый) -->
+    <section id="cabinet" class="cabinet" style="display: none;">
+        <div class="container">
+            <h2>Личный кабинет</h2>
+            <div class="cabinet__layout">
+                <aside class="cabinet__menu">
+                    <a href="#" class="cabinet__menu-item active">Мои заявки</a>
+                    <a href="#" class="cabinet__menu-item">Избранные объекты</a>
+                    <a href="#" class="cabinet__menu-item">Мой профиль</a>
+                </aside>
+                <div class="cabinet__content">
+                    <h3>Мои заявки</h3>
+                    <div class="cabinet__request-item">
+                        <h4>Просмотр квартиры на ул. Пушкина</h4>
+                        <p>Дата: 15.04.2026 в 14:00</p>
+                        <p class="cabinet__status cabinet__status--pending">Статус: Ожидает подтверждения</p>
+                    </div>
+                    <div class="cabinet__request-item">
+                        <h4>Просмотр коттеджа в пос. Кизнер</h4>
+                        <p>Дата: 10.04.2026 в 11:00</p>
+                        <p class="cabinet__status cabinet__status--completed">Статус: Завершено</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h4>ДомКлюч</h4>
+                    <p>Ваш надёжный партнёр в поиске недвижимости</p>
+                </div>
+                <div class="footer__section">
+                    <h4>Быстрые ссылки</h4>
+                    <ul>
+                        <li><a href="#catalog">Каталог</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4>Соцсети</h4>
+                    <ul>
+                        <li><a href="#">ВКонтакте</a></li>
+                        <li><a href="#">Телеграм</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 ДомКлюч. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+</body>
+
+</html>
